@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20230107235418" />
+<link rel="stylesheet" href="css/style.min.css?_v=20230107235418" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css?_v=20230107235418" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230107235418" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?_v=20230107235418" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js?_v=20230107235418" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png" />
+<title>Sauna Viza</title>
+</head>
+<body>
+<!-- Header -->
+<header style="background-image: url(./img/bg.jpeg); background-size: cover; background-position: center;">
+<div class="container">
+<div class="header d-flex justify-content-between align-content-center">
+<div class="header__logo">
+<a href="index.html"><picture><source srcset="./img/logo.webp" type="image/webp"><img class="img-fluid" src="./img/logo.png" alt="logo" /></picture></a>
+</div>
+<div class="header__content">
+<div class="header__text me-5">24/7, г. Казань, ул. Минская д. 12</div>
+<div class="header__social me-3">
+<a href="#">
+<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.625 0C5.4375 0 1.25 4.1875 1.25 9.375C1.25 11.5 1.9375 13.5 3.25 15.125L1.9375 19.125C1.875 19.375 1.9375 19.625 2.125 19.8125C2.1875 19.9375 2.375 20 2.5 20C2.5625 20 2.6875 20 2.75 19.9375L7.0625 18C8.1875 18.5 9.375 18.75 10.625 18.75C15.8125 18.75 20 14.5625 20 9.375C20 4.1875 15.8125 0 10.625 0Z" fill="#25D366"/>
+<path d="M16.0625 12.8125C15.8125 13.5625 14.875 14.1875 14.0625 14.3125C13.875 14.375 13.6875 14.375 13.4375 14.375C12.9375 14.375 12.1875 14.25 10.875 13.6875C9.375 13.0625 7.875 11.75 6.6875 10.0625V10C6.3125 9.4375 5.625 8.375 5.625 7.25C5.625 5.875 6.3125 5.1875 6.5625 4.875C6.875 4.5625 7.3125 4.375 7.8125 4.375C7.9375 4.375 8 4.375 8.125 4.375C8.5625 4.375 8.875 4.5 9.1875 5.125L9.4375 5.625C9.625 6.125 9.875 6.6875 9.9375 6.75C10.125 7.125 10.125 7.4375 9.9375 7.75C9.875 7.9375 9.75 8.0625 9.625 8.1875C9.5625 8.3125 9.5 8.375 9.4375 8.375C9.375 8.4375 9.375 8.4375 9.3125 8.5C9.5 8.8125 9.875 9.375 10.375 9.8125C11.125 10.5 11.6875 10.6875 12 10.8125C12.125 10.6875 12.25 10.4375 12.4375 10.25L12.5 10.125C12.8125 9.6875 13.3125 9.5625 13.8125 9.75C14.0625 9.875 15.4375 10.5 15.4375 10.5L15.5625 10.5625C15.75 10.6875 16 10.75 16.125 11C16.375 11.5625 16.1875 12.375 16.0625 12.8125Z" fill="white"/>
+</svg>
+</a>
+<a href="#">
+<svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_211)">
+<path d="M10 0C4.47711 0 0 4.47711 0 10C0 15.5229 4.47711 20 10 20C15.5229 20 20 15.5229 20 10C20 4.47711 15.5229 0 10 0Z" fill="#40B3E0" />
+<path d="M14.8658 5.75242L13.0797 14.7577C13.0797 14.7577 12.83 15.3822 12.143 15.0824L8.02129 11.9224L6.52254 11.198L3.99957 10.3487C3.99957 10.3487 3.61239 10.2113 3.57489 9.91156C3.53746 9.61179 4.01207 9.44945 4.01207 9.44945L14.0414 5.51508C14.0414 5.51508 14.8658 5.15289 14.8658 5.75242Z" fill="white" />
+<path d="M7.70451 14.6565C7.70451 14.6565 7.58419 14.6453 7.43427 14.1706C7.28443 13.696 6.52255 11.198 6.52255 11.198L12.5801 7.35112C12.5801 7.35112 12.9299 7.13878 12.9174 7.35112C12.9174 7.35112 12.9798 7.38854 12.7925 7.56339C12.6051 7.73831 8.0338 11.8474 8.0338 11.8474" fill="#D2E5F1" />
+<path d="M9.60169 13.134L7.97137 14.6204C7.97137 14.6204 7.84395 14.7171 7.7045 14.6565L8.01669 11.8955" fill="#B5CFE4" />
+</g>
+<defs>
+<clippath id="clip0_2_211">
+<rect width="20" height="20" fill="white" />
+</clippath>
+</defs>
+</svg>
+</a>
+</div>
+<div class="header__phone me-4"><a href="tel:+88432590099">8(843)-259-00-99</a></div>
+<button class="call__btn call__btn-send" type="submit" id="modal-1">Заказать звонок</button>
+</div>
+</div>
+<div class="header__info">
+<h1 class="header__title" data-aos="fade-right" data-aos-duration="1000">
+<span class="viza__color">Сауна Viza</span> отдых <br /> для семьи и компании
+</h1>
+<ul class="header__list" data-aos="fade-right" data-aos-duration="2000">
+<li>От 1500 рублей/час</li>
+<li>Вместимость до 15 человек</li>
+<li>Уборка антисептиком после каждого гостя</li>
+<li>Дизайнерский ремонт 2022 года</li>
+</ul>
+<button class="order__btn call__btn-send" type="submit" id="modal-2">Забронировать</button>
+</div>
+</div>
+<!-- Первая модалка -->
+<dialog id="dialog1" style="background-image: url(./img/bg2.jpeg); background-size:cover; background-position: center;">
+<form class="js__form">
+<div class="close__modal" id="modal__close-1">X</div>
+<h5>Заказать звонок</h5>
+<p>Оставьте заявку и наш администратор свяжется с вами и ответит на все волнующие вопросы</p>
+<input required pattern="[а-яА-Я]+" title="Имя должно содердать только буквы" class="valid__input valid__name" type="text" placeholder="Ваше имя" />
+<input required type="number" pattern="[0-9]" title="Только цифры" placeholder="Ваш номер телефона" class="d-block" />
+<button class="call__btn-send" type="submit">Отправить</button>
+</form>
+</dialog>
+<!-- Вторая модалка -->
+<dialog id="dialog2" style="background-image: url(./img/modalbg.jpeg); background-size:cover; background-position: center;">
+<form class="js__form">
+<div class="close__modal" id="modal__close-2">X</div>
+<h5>Забронировать</h5>
+<p>Оставьте заявку и наш администратор свяжется с вами и ответит на все волнующие вопросы</p>
+<input required pattern="[а-яА-Я]+" title="Имя должно содердать только буквы" class="valid__input valid__name" type="text" placeholder="Ваше имя" />
+<input required type="number" pattern="[0-9]" title="Только цифры" placeholder="Ваш номер телефона" class="d-block" />
+<button class="call__btn-send" type="submit">Отправить</button>
+</form>
+</dialog>
+</header>
+<!-- Main -->
+<main>
+<!-- Фото и видеоэкскурсия -->
+<section class="gallery">
+<div class="container-fluid gallery__container">
+<div class="container">
+<h2 class="title"><span class="title__orange">Фото</span> и видеоэкскурсия</h2>
+<div class="gallery__content" data-aos="fade-up" data-aos-duration="1000">
+<video controls="controls" poster="./img/videoprevies.jpeg">
+<source src="./img/videosauna.mp4" type="video/mp4" />
+</video>
+</div>
+<div class="swiper" data-aos="fade-up" data-aos-duration="2000">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<picture><source srcset="./img/slider/photo1.webp" type="image/webp"><img src="./img/slider/photo1.jpeg" alt="photo1" /></picture>
+</div>
+<div class="swiper-slide">
+<picture><source srcset="./img/slider/photo2.webp" type="image/webp"><img src="./img/slider/photo2.jpeg" alt="photo2" /></picture>
+</div>
+<div class="swiper-slide">
+<picture><source srcset="./img/slider/photo3.webp" type="image/webp"><img src="./img/slider/photo3.jpeg" alt="photo3" /></picture>
+</div>
+<div class="swiper-slide">
+<picture><source srcset="./img/slider/photo4.webp" type="image/webp"><img src="./img/slider/photo4.jpeg" alt="photo4" /></picture>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<div class="d-flex justify-content-center">
+<button class="order__btn call__btn-send" id="modal-3" type="submit" data-aos="fade-up" data-aos-duration="3000">Забронировать</button>
+</div>
+</div>
+<!-- третья модалка -->
+<dialog id="dialog3" style="background-image: url(./img/modalbg2.jpeg); background-size:cover; background-position: center;">
+<form class="js__form">
+<div class="close__modal" id="modal__close-3">X</div>
+<h5>Забронировать</h5>
+<p>Оставьте заявку и наш администратор свяжется с вами и ответит на все волнующие вопросы</p>
+<input pattern="[а-яА-Я]+" title="Имя должно содердать только буквы" required class="valid__input valid__name" type="text" placeholder="Ваше имя" />
+<input pattern="[0-9]" type="number" title="Введите корректный номер телефона" required placeholder="Ваш номер телефона" class="d-block" />
+<button type="submit" class="call__btn-send">Забронировать</button>
+</form>
+</dialog>
+</div>
+</section>
+<!-- Для гостей -->
+<section class="guest">
+<div class="container-fluid" style="background-image: url(./img/guestbg.jpeg); background-size:cover;">
+<div class="container">
+<h2 class="title"><span class="title__orange">Что получит</span> дорогой гость</h2>
+<div class="guest__content">
+<div class="guest__content-item" data-aos="fade-right" data-aos-duration="1000">
+<div class="guest__content-item-img">
+<picture><source srcset="./img/guest/3.webp" type="image/webp"><img class="img-fluid" src="./img/guest/3.jpeg" alt="Баня"></picture>
+</div>
+<div>
+<h5 class="subtitle">Оздоровительные процедуры</h5>
+<div class="guest__content-item-list">
+<ul class="list__item-guest">
+<li>Сауна</li>
+<li>Хамам</li>
+<li>Бассейн</li>
+<li>SPA процедуры</li>
+</ul>
+</div>
+</div> 
+</div>
+<div class="guest__content-item" data-aos="fade-left" data-aos-duration="1000">
+<div class="guest__content-item-img">
+<picture><source srcset="./img/guest/2.webp" type="image/webp"><img class="img-fluid" src="./img/guest/2.jpeg" alt="Баня"></picture>
+</div>
+<div>
+<h5 class="subtitle">Медиа развлечения</h5>
+<div class="guest__content-item-list">
+<ul class="list__item-guest">
+<li>Караоке</li>
+<li>Музыка</li>
+<li>Плазменный телевизор 65''</li>
+<li>Xbox Series X</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="guest__content-item" data-aos="fade-right" data-aos-duration="1000">
+<div class="guest__content-item-img">
+<picture><source srcset="./img/guest/1.webp" type="image/webp"><img class="img-fluid" src="./img/guest/1.jpeg" alt="Баня"></picture>
+</div>
+<div>
+<h5 class="subtitle">Отдых и общение</h5>
+<div class="guest__content-item-list">
+<ul class="list__item-guest">
+<li>Лаундж зона</li>
+<li>Бильярд</li>
+<li>Настольные игры</li>
+<li>2 комнаты отдыха</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="guest__content-item" data-aos="fade-left" data-aos-duration="1000">
+<div class="guest__content-item-img">
+<picture><source srcset="./img/guest/4.webp" type="image/webp"><img class="img-fluid" src="./img/guest/4.jpeg" alt="Баня"></picture>
+</div>
+<div>
+<h5 class="subtitle">Всегда в наличии</h5>
+<div class="guest__content-item-list">
+<ul class="list__item-guest">
+<li>Алкогольные напитки</li>
+<li>Кальян</li>
+<li>Косметическая продукция</li>
+<li>Авторские чаи</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Зона отдыха -->
+<section class="room">
+<div class="container-fluid room__container" style="background-image: url(./img/roombg.jpeg); background-size:cover;">
+<div class="container">
+<div class="room__content">
+<h2 class="title"><span class="title__orange">250 м2 </span><span class="title__white">только в Вашем распоряжении</span></h2>
+<div class="room__text-block" data-aos="fade-up" data-aos-duration="2000">
+<p class="room__text">При бронировании сауна полностью закрывается для одного клиента. Вы можете провести время с семьей или отдохнуть в компании друзей.</p>
+<p class="room__text">Вас не будут отвлекать посторонние гости. В сауне останется персонал, готовый позаботиться о Вас, учтиво выполнить Ваши пожелания и решить любую задачу.</p>
+<p class="room__text">Мы не используем персональные данные наших клиентов для рекламных рассылок и не передаем информацию о гостях третьим лиц</p>
+<p class="room__text">С нами Вы можете полностью расслабиться и знать что рядом все свои.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Акции и скидки -->
+<section class="stock">
+<div class="container">
+<h2 class="title"><span class="title__orange">Акции</span> для Вас</h2>
+<div class="stock__content">
+<div class="stock__content-item" data-aos="fade-up" data-aos-duration="1000">
+<picture><source srcset="./img/stock/stock2.webp" type="image/webp"><img class="img-fluid stock__img" src="./img/stock/stock2.jpeg" alt="Подарки"></picture>
+<p class="stock__content-title">Каждый четвертый час в подарок!</p>
+</div>
+<div class="stock__content-item" data-aos="fade-up" data-aos-duration="2000">
+<picture><source srcset="./img/stock/stock1.webp" type="image/webp"><img class="img-fluid stock__img" src="./img/stock/stock1.jpeg" alt="Скидки"></picture>
+<p class="stock__content-title">Скидка 25% на день рождения!</p>
+<p class="stock__content-text">Действует 5 дней до и 5 дней после праздничной даты.</p>
+</div>
+<div class="stock__content-item" data-aos="fade-up" data-aos-duration="3000">
+<picture><source srcset="./img/stock/stock3.webp" type="image/webp"><img class="img-fluid stock__img" src="./img/stock/stock3.jpeg" alt="Счастливые часы"></picture>
+<p class="stock__content-title">Счастливые часы! 1500 руб./ час</p>
+<p class="stock__content-text">С 8:00 до 16:00 с понедельника по четверг</p>
+</div>
+</div>
+<div class="stock__content-info stock__content-text">Дорогие гости в нашем заведении акции не суммируются, не <br> действуют в праздничные дни и Новогодние каникулы.</div>
+</div>
+</section>
+<!-- Все для здоровья и отдыха -->
+<section class="all-in">
+<div class="container-fluid" style="background-image: url(./img/bgallin.jpeg); background-size: cover;">
+<div class="container">
+<div class="all-in__content">
+<div class="all-in__content__img" data-aos="fade-right" data-aos-duration="1000">
+<picture><source srcset="./img/girl.webp" type="image/webp"><img class="img-fluid" src="./img/girl.jpeg" alt="Девушка в бане"></picture>
+</div>
+<div class="all-in__content__list" data-aos="fade-left" data-aos-duration="1000">
+<h2 class="title all-in-title"><span class="title__orange">Все для</span> здоровья и отдыха</h2>
+<h5 class="all-in__content__list-title">Финская сауна</h5>
+<p class="all-in__content__list-text">Сауна разогревается до 120 градусов за 15 минут, а высокоточные датчики позволяют регулировать жар. К Вашему приходу будет готова нужная температура.Для наших гостей мы сохраняем  высокие стандарты качества:</p>
+<ul class="all-in__content__list-item">
+<li class="content__list-item">Бамбуковые веники и эфирные масла</li>
+<li class="content__list-item">Древесная отделка и пологи из липы экстра сорта, которая не выделяет смолу, не обжигает кожу, создает эстетику и уют</li>
+<li class="content__list-item">Жаркая каменка с природными камнями.</li>
+</ul>
+<p class="all-in__content__list-text">Мы 24 часа в сутки готовим парную с горячим, но мягким воздухом, богатым выбором банных принадлежностей и травяных настоев, чтобы вы могли в любое время отдохнуть от забот.</p>
+<button type="submit" class="order__btn call__btn-send" id="modal-4">Забронировать</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Банный набор индивидуально для каждого -->
+<section class="kits">
+<div class="container">
+<h2 class="title kits__title"><span class="title__orange">Банный набор</span> индивидуально для каждого</h2>
+<div class="kits__contents">
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="4000">
+<picture><source srcset="./img/kits/kits1.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits1.jpeg" alt="Массажные бамбуковые веники"></picture>
+<p class="kits__contents_item-text">Массажные бамбуковые веники</p>
+</div>
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="7000">
+<picture><source srcset="./img/kits/kits5.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits5.jpeg" alt="Натуральная косметика для тела"></picture>
+<p class="kits__contents_item-text">Натуральная косметика для тела</p>
+</div>
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="6000">
+<picture><source srcset="./img/kits/kits3.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits3.jpeg" alt="Эфирные масла, ароматерапия"></picture>
+<p class="kits__contents_item-text">Эфирные масла, ароматерапия</p>
+</div>
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="5000">
+<picture><source srcset="./img/kits/kits2.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits2.jpeg" alt="Банные простыни"></picture>
+<p class="kits__contents_item-text">Банные простыни</p>
+</div>
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="4000">
+<picture><source srcset="./img/kits/kits4.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits4.jpeg" alt="Головные уборы и полотенца"></picture>
+<p class="kits__contents_item-text">Головные уборы и полотенца</p>
+</div>
+<div class="kits__contents_item" data-aos="fade-down" data-aos-duration="3000">
+<picture><source srcset="./img/kits/kits6.webp" type="image/webp"><img class="img-fluid" src="./img/kits/kits6.jpeg" alt="Халат и тапочки"></picture>
+<p class="kits__contents_item-text">Халат и тапочки</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Кухня и бар -->
+<section class="bar">
+<div class="container-fluid bar__container" style="background-image: url(./img/maxresdefault.jpeg); background-size: cover;">
+<div class="container bar__container-flex" data-aos="fade-left" data-aos-duration="3000">
+<h2 class="title"><span class="title__orange">Кухня</span> <span class="title__bar">и бар</span></h2>
+<ul class="bar__list">
+<li class="bar__list-item">Алкогольные напитки</li>
+<li class="bar__list-item">Снеки</li>
+<li class="bar__list-item">Кальян</li>
+<li class="bar__list-item">Соки и газировки</li>
+<li class="bar__list-item">Авторские чаи</li>
+</ul>
+<p class="bar__text">Алкоголь и еду можно принести с собой, купить в баре или заказать доставку прямо в сауну</p>
+<div class="bar__img">
+<a href="#" class="bar__img-link"><picture><source srcset="./img/delivery.webp" type="image/webp"><img width="65px" height="65px" src="./img/delivery.png" alt="delivery"></picture></a>
+<a href="#" class="bar__img-link"><picture><source srcset="./img/Yandexeats.webp" type="image/webp"><img width="65px" height="65px" src="./img/Yandexeats.png" alt="YandexEats"></picture></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Гостиничный номер -->
+<section class="hotel">
+<div class="container hotel__container">
+<div class="hotel__content">
+<div class="hotel__gallery__content" data-aos="zoom-in">
+<div class="hotel__gallery">
+<div class="hotel__gallery-one">
+<picture><source srcset="./img/hotel/rooms1.webp" type="image/webp"><img class="img-fluid" src="./img/hotel/rooms1.jpeg"></picture>
+</div>
+<div class="hotel__gallery-two">
+<picture><source srcset="./img/hotel/rooms2.webp" type="image/webp"><img class="img-fluid" src="./img/hotel/rooms2.jpeg"></picture>
+<picture><source srcset="./img/hotel/rooms3.webp" type="image/webp"><img class="img-fluid" src="./img/hotel/rooms3.jpeg"></picture>
+<picture><source srcset="./img/hotel/rooms4.webp" type="image/webp"><img class="img-fluid" src="./img/hotel/rooms4.jpeg"></picture>
+</div>
+</div>
+</div>
+<div class="hotel__gallery__text" data-aos="fade-down" data-aos-duration="2000">
+<h2 class="title"><span class="title__orange">Гостиничный</span> номер</h2>
+<p class="hotel__gallery__subtext">Вы можете снять гостиничный номер без аренды сауны.Приглушенная музыка и лаконичный стиль с первых минут перенесут Вас в атмосферу спокойствия и отдыха.</p>
+<p class="hotel__gallery__subtext">В номере найдется все, что нужно:</p>
+<ul class="hotel__gallery__list">
+<li class="hotel__gallery__list-item">1 кровать размером 200*200</li>
+<li class="hotel__gallery__list-item">Комплект белья из сатина</li>
+<li class="hotel__gallery__list-item">Плазменный телевизор </li>
+<li class="hotel__gallery__list-item">Телефон</li>
+<li class="hotel__gallery__list-item">Фен</li>
+<li class="hotel__gallery__list-item">Сейф</li>
+<li class="hotel__gallery__list-item">Мини-бар</li>
+<li class="hotel__gallery__list-item">Станция для приготовления чая и кофе</li>
+<li class="hotel__gallery__list-item">Ванная комната с душевой</li>
+<li class="hotel__gallery__list-item">Банные принадлежности</li>
+<li class="hotel__gallery__list-item">Центральная система климат-контроля</li>
+<li class="hotel__gallery__list-item">Wi-Fi</li>
+</ul>
+<button type="submit" class="order__btn call__btn-send" id="modal-5">Забронировать номер</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Место для незабываемой вечеринки -->
+<section class="kits">
+<div class="container">
+<h2 class="title kits__title"><span class="title__orange">Место для</span> незабываемой вечеринки</h2>
+<div class="kits__contents">
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<picture><source srcset="./img/place/place1.webp" type="image/webp"><img class="img-fluid" src="./img/place/place1.jpeg" alt="День рождения"></picture>
+<p class="kits__contents_item-text">День рождения</p>
+</div>
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<p class="kits__contents-text">Сауна, хамам, бильярд, караоке, бассейн, авторские коктейли сделают Ваш праздник ярким и полным эмоций</p>
+<p class="kits__contents-text">А самый радушный персонал Казани окажет Вам по-настоящему горячий прием</p>
+</div>
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<picture><source srcset="./img/place/place2.webp" type="image/webp"><img class="img-fluid" src="./img/place/place2.jpeg" alt="Новый год"></picture>
+<p class="kits__contents_item-text">Новый год</p>
+</div>
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<picture><source srcset="./img/place/place3.webp" type="image/webp"><img class="img-fluid" src="./img/place/place3.jpeg" alt="Семейный отдых"></picture>
+<p class="kits__contents_item-text">Семейный отдых</p>
+</div>
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<picture><source srcset="./img/place/place5.webp" type="image/webp"><img class="img-fluid" src="./img/place/place5.jpeg" alt="Встреча с друзьями"></picture>
+<p class="kits__contents_item-text">Встреча с друзьями</p>
+</div>
+<div class="kits__contents_item" data-aos="flip-up" data-aos-duration="2000">
+<picture><source srcset="./img/place/place6.webp" type="image/webp"><img class="img-fluid" src="./img/place/place6.jpeg" alt="Мальчишник/Девичник"></picture>
+<p class="kits__contents_item-text">Мальчишник/Девичник</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Часто задаваемые вопросы -->
+<section class="question" data-aos="fade-up" data-aos-duration="2000">
+<div class="container">
+<h2 class="title"><span class="title__orange">Часто задаваемые</span> вопросы</h2>
+<details>
+<summary class="kits__contents_item-text">Можно ли приходить со своим алкоголем?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Есть ли у вас банные принадлежности?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Можно ли париться вениками?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Сколько человек вмещает?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">У вас есть кальян?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">До какой температуры разогревается сауна?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Что у вас есть в меню?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Можно ли заказать к вам еду?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">За сколько дней можно забронировать?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+<details>
+<summary class="kits__contents_item-text">Какие у вас есть акции?</summary>
+<p class="kits__contents-text kits__contents-text-center">А также диаграммы связей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут функционально разнесены на независимые элементы. Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Современные технологии достигли такого уровня, что реализация намеченных плановых заданий говорит о возможностях приоретизации разума над эмоциями.</p>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+<div class="container-fluid" style="background-image: url(./img/footerbg.jpeg); background-size: cover; background-position: center;">
+<div class="container">
+<div class="footer__content">
+<div class="footer__contacts" data-aos="fade-right" data-aos-duration="2000">
+<h2 class="title title__footer">Контакты</h2>
+<a class="footer__link" href="tel:88432590099">8(843)-259-00-99</a>
+<p class="footer__adress">24/7,  г. Казань, ул. Минская д.12</p>
+<div class="footer__social" data-aos="fade-left" data-aos-duration="2000">
+<a href="#" class="footer__social-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none"><path fill="currentColor" d="M30.137 5.42 4.28 15.392c-1.764.71-1.754 1.693-.324 2.132l6.639 2.071 15.359-9.69c.726-.442 1.39-.205.844.28l-12.444 11.23h-.002l.002.002-.457 6.842c.67 0 .966-.307 1.343-.67l3.224-3.136 6.707 4.954c1.236.681 2.125.331 2.432-1.145l4.403-20.749c.45-1.807-.69-2.625-1.87-2.091Z"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telegram
+</a>
+<a href="#" class="footer__social-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none"><g clip-path="url(#a)"><path fill="currentColor" d="m2.923 32.084 1.971-7.245A14.516 14.516 0 0 1 2.917 17.5c0-8.054 6.529-14.583 14.583-14.583S32.083 9.446 32.083 17.5c0 8.055-6.529 14.584-14.583 14.584a14.517 14.517 0 0 1-7.335-1.976l-7.242 1.976Zm9.314-21.426a1.401 1.401 0 0 0-.541.146 1.88 1.88 0 0 0-.429.332c-.175.165-.274.308-.38.446a3.98 3.98 0 0 0-.825 2.447c.003.715.19 1.41.482 2.061.596 1.316 1.578 2.708 2.874 3.999.312.31.617.623.945.913a13.778 13.778 0 0 0 5.6 2.983l.83.127c.27.015.54-.005.81-.018.425-.023.84-.138 1.216-.337.242-.129.355-.193.558-.321 0 0 .063-.041.182-.131.197-.146.318-.25.482-.42.12-.126.226-.273.306-.44.114-.239.227-.692.274-1.07.035-.289.025-.446.02-.544-.005-.156-.135-.318-.277-.386l-.848-.38s-1.27-.554-2.043-.907a.725.725 0 0 0-.259-.06.701.701 0 0 0-.55.186v-.003c-.008 0-.106.083-1.16 1.36a.51.51 0 0 1-.537.19 2.06 2.06 0 0 1-.278-.096c-.181-.076-.244-.105-.368-.159l-.007-.003a8.762 8.762 0 0 1-2.29-1.458c-.184-.16-.354-.336-.53-.505a9.184 9.184 0 0 1-1.487-1.849l-.086-.139a1.348 1.348 0 0 1-.148-.299c-.056-.214.088-.386.088-.386s.355-.388.52-.598c.137-.175.265-.356.383-.544.172-.277.226-.561.136-.781a121.17 121.17 0 0 0-1.266-2.977c-.086-.195-.341-.335-.573-.363a6.508 6.508 0 0 0-.236-.024 4.946 4.946 0 0 0-.588.006v.002Z"/></g><defs><clippath id="a"><path fill="#fff" d="M0 0h35v35H0z"/></clippath></defs></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WhatsApp                    
+</a>
+<a href="#" class="footer__social-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><g clip-path="url(#a)"><path fill="currentColor" d="M4.109.001h23.784A4.118 4.118 0 0 1 32 4.108v23.785a4.117 4.117 0 0 1-4.107 4.105H4.11A4.119 4.119 0 0 1 0 27.893V4.108A4.12 4.12 0 0 1 4.109.001Zm19.203 3.554c-.794 0-1.441.65-1.441 1.442v3.447c0 .794.647 1.442 1.44 1.442h3.617c.792 0 1.44-.648 1.44-1.442V4.997c0-.792-.648-1.442-1.44-1.442h-3.616Zm5.07 9.977h-2.815c.267.872.412 1.792.412 2.748 0 5.32-4.456 9.636-9.949 9.636-5.492 0-9.947-4.315-9.947-9.636 0-.956.146-1.876.412-2.748H3.557V27.05c0 .7.572 1.27 1.271 1.27h22.284c.7 0 1.27-.57 1.27-1.27V13.532ZM16.03 9.704c-3.548 0-6.425 2.787-6.425 6.228 0 3.438 2.877 6.227 6.425 6.227 3.55 0 6.428-2.79 6.428-6.227 0-3.441-2.878-6.228-6.428-6.228Z"/></g><defs><clippath id="b"><path fill="#fff" d="M0 0h32v32H0z"/></clippath></defs></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram
+</a>
+<a href="#" class="footer__social-link">
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none"><path fill="currentColor" d="M21.981 2.917h-8.947c-8.173 0-10.117 1.944-10.117 10.102v8.947c0 8.173 1.929 10.118 10.102 10.118h8.947c8.173 0 10.117-1.93 10.117-10.102v-8.948c0-8.173-1.929-10.117-10.102-10.117Zm4.482 20.812h-2.127c-.805 0-1.048-.654-2.491-2.097-1.261-1.215-1.793-1.367-2.112-1.367-.44 0-.562.122-.562.73v1.913c0 .517-.167.82-1.52.82a8.302 8.302 0 0 1-6.486-3.888 16.955 16.955 0 0 1-3.357-7.049c0-.319.122-.608.73-.608h2.126c.547 0 .744.244.957.806 1.033 3.038 2.795 5.681 3.51 5.681.273 0 .394-.122.394-.805v-3.13c-.091-1.427-.85-1.549-.85-2.065a.525.525 0 0 1 .546-.487h3.342c.456 0 .608.228.608.775v4.223c0 .456.198.608.334.608.274 0 .486-.152.988-.653a17.501 17.501 0 0 0 2.613-4.345.916.916 0 0 1 .926-.608h2.127c.638 0 .775.32.638.775a26.554 26.554 0 0 1-2.856 4.907c-.228.35-.319.532 0 .942.213.319.957.942 1.458 1.534a9.456 9.456 0 0 1 1.793 2.491c.182.593-.122.897-.73.897Z"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vkontakte
+</a>
+</div>
+<button type="submit" class="order__btn call__btn-send" id="modal-6" data-aos="zoom-in-down" data-aos-duration="3000">Забронировать</button>
+</div>
+<div class="footer__map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.0413228415541!2d49.232137753280355!3d55.772578442709246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eadf8a6fba047%3A0xd496f2b869417e2!2z0YPQuy4g0JzQuNC90YHQutCw0Y8sINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwg0KDQvtGB0YHQuNGPLCA0MjAxNDA!5e1!3m2!1sru!2sby!4v1673014130585!5m2!1sru!2sby" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="js/app.min.js?_v=20230107235418"></script>
+<script>AOS.init(); </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230107235418"></script>
+<script>const swiper = new Swiper(".swiper", { direction: "horizontal", spaceBetween: 30, loop: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, breakpoints: { 320: { slidesPerView: 1 }, 991: { slidesPerView: 4 } } });</script>
+</body>
+</html>
